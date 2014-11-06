@@ -1,0 +1,21 @@
+/* No comment provided by engineer. */
+"Cannot connect to the endpoint" = "エンドポイントに接続することができませんでした";
+
+/* No comment provided by engineer. */
+"Cannot find a theme.yaml" = "theme.yamlが見つかりませんでした";
+
+/* No comment provided by engineer. */
+"Please check the endpoint and the status of the MT" = "エンドポイントの設定とMTの状態を確認してください";
+
+/* No comment provided by engineer. */
+"Please choose a theme directory" = "テーマディレクトリを選択してください";
+
+/* No comment provided by engineer. */
+"Please confirm the username and the password" = "ユーザー名とパスワードを確認してください";
+
+/* No comment provided by engineer. */
+"mt-data-api.cgi returned an authentication error" = "Data API との認証でエラーが発生しました";
+
+/* No comment provided by engineer. */
+"mt-data-api.cgi returned an unexpected data" = "Data API との通信でエラーが発生しました";
+

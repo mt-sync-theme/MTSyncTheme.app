@@ -1,0 +1,54 @@
+/* Class = "NSTextFieldCell"; title = "Theme Directory"; ObjectID = "9JI-Dk-FXl"; */
+"9JI-Dk-FXl.title" = "テーマディレクトリ";
+
+/* Class = "NSTextFieldCell"; title = "URL Handler"; ObjectID = "9Rp-h0-BeJ"; */
+"9Rp-h0-BeJ.title" = "URLハンドラ";
+
+/* Class = "NSButtonCell"; title = "Settings"; ObjectID = "9bs-iP-kMh"; */
+"9bs-iP-kMh.title" = "設定";
+
+/* Class = "NSTextFieldCell"; title = "Username"; ObjectID = "BP1-xO-r6e"; */
+"BP1-xO-r6e.title" = "ユーザー名";
+
+/* Class = "NSTextFieldCell"; title = "Endpoint"; ObjectID = "D1Z-n4-2lm"; */
+"D1Z-n4-2lm.title" = "エンドポイント";
+
+/* Class = "NSButtonCell"; title = "Preview"; ObjectID = "Hdv-dO-WJt"; */
+"Hdv-dO-WJt.title" = "Preview";
+
+/* Class = "NSTextFieldCell"; title = "Username"; ObjectID = "QZi-Du-oMP"; */
+"QZi-Du-oMP.title" = "ユーザー名";
+
+/* Class = "NSTextFieldCell"; title = "Please drop your theme directory here."; ObjectID = "RAV-ZB-5TA"; */
+"RAV-ZB-5TA.title" = "テーマディレクトリをドラッグアンドドロップ";
+
+/* Class = "NSButtonCell"; title = "Open download page"; ObjectID = "TO0-xb-gNy"; */
+"TO0-xb-gNy.title" = "ダウンロードページを開く";
+
+/* Class = "NSTextFieldCell"; title = "You can download new version."; ObjectID = "fZz-ff-7la"; */
+"fZz-ff-7la.title" = "新しいバージョンをダウンロードできます";
+
+/* Class = "NSTextFieldCell"; title = "Theme Directory"; ObjectID = "fhc-qx-p2f"; */
+"fhc-qx-p2f.title" = "テーマディレクトリ";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "fiW-a1-tD1"; */
+"fiW-a1-tD1.title" = "保存";
+
+/* Class = "NSButtonCell"; title = "Select"; ObjectID = "gof-4i-NKW"; */
+"gof-4i-NKW.title" = "選択";
+
+/* Class = "NSButtonCell"; title = "Reset"; ObjectID = "qWA-qe-i0O"; */
+"qWA-qe-i0O.title" = "リセット";
+
+/* Class = "NSButtonCell"; title = "Reset"; ObjectID = "rTf-eK-CuZ"; */
+"rTf-eK-CuZ.title" = "リセット";
+
+/* Class = "NSButtonCell"; title = "Load"; ObjectID = "tgY-Hc-9Yd"; */
+"tgY-Hc-9Yd.title" = "読み出し";
+
+/* Class = "NSTextFieldCell"; title = "Endpoint"; ObjectID = "y8A-p5-pni"; */
+"y8A-p5-pni.title" = "エンドポイント";
+
+/* Class = "NSTextFieldCell"; title = "Password"; ObjectID = "yT9-3M-OZV"; */
+"yT9-3M-OZV.title" = "パスワード";
+
