@@ -6,6 +6,13 @@ This is a GUI frontend of the [mt-sync-theme](https://github.com/mt-sync-theme/m
 
 ![Screenshot](https://raw.githubusercontent.com/mt-sync-theme/MTSyncTheme.app/master/artwork/screenshot.png)
 
+## Requirements
+
+* OS X 10.9 or any later version
+    * OS X Mavericks
+    * OS X Yosemite
+    * or a later version
+
 ## Installation
 
 ## Setup
