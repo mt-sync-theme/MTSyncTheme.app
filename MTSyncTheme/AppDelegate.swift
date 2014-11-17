@@ -111,6 +111,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, NSDragging
                 let latestTagName = latest?["tag_name"] as String
                 let latestVersion = latestTagName.substringFromIndex(advance(latestTagName.startIndex, 1))
                 let currentVersion = NSBundle.mainBundle().infoDictionary?["CFBundleShortVersionString"] as String
+                if (currentVersion == latestVersion) {
+                    return
+                }
                 if (currentVersion.compare(latestVersion, options: NSStringCompareOptions.NumericSearch) == NSComparisonResult.OrderedDescending) {
                     return
                 }
