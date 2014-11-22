@@ -27,6 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, NSDragging
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
+        configWindow.preventsApplicationTerminationWhenModal = false
         window.registerForDraggedTypes([NSFilenamesPboardType])
         checkForUpdate()
     }
