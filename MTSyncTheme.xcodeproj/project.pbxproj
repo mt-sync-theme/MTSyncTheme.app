@@ -11,12 +11,10 @@
 		311B93621A0C74AB008F6AF9 /* ConfigWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B93611A0C74AB008F6AF9 /* ConfigWindow.swift */; };
 		31307D311A0F27ED00781D8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31307D331A0F27ED00781D8E /* InfoPlist.strings */; };
 		31307D361A0F27ED00781D8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31307D381A0F27ED00781D8E /* InfoPlist.strings */; };
-		317783A11A16A84B0056E8A7 /* MTSyncTheme.ai in Resources */ = {isa = PBXBuildFile; fileRef = 317783A01A16A84B0056E8A7 /* MTSyncTheme.ai */; };
 		317783A41A16D6FB0056E8A7 /* StringIsEmptyTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317783A31A16D6FB0056E8A7 /* StringIsEmptyTransformer.swift */; };
 		317783A61A16DBB80056E8A7 /* StringIsNotEmptyTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317783A51A16DBB80056E8A7 /* StringIsNotEmptyTransformer.swift */; };
 		31A592D61A18327500E574A6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 31A592D81A18327500E574A6 /* Credits.rtf */; };
 		31A592DC1A18369300E574A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31A592DE1A18369300E574A6 /* Localizable.strings */; };
-		31A592E01A18397400E574A6 /* MTSyncTheme.png in Resources */ = {isa = PBXBuildFile; fileRef = 31A592DF1A18397400E574A6 /* MTSyncTheme.png */; };
 		31E5BF451A0F35C0000D3112 /* YAML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E5BF441A0F35C0000D3112 /* YAML.framework */; };
 		31EEACC71A0B826600C670DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEACC61A0B826600C670DD /* AppDelegate.swift */; };
 		31EEACC91A0B826600C670DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31EEACC81A0B826600C670DD /* Images.xcassets */; };
@@ -260,8 +258,6 @@
 			files = (
 				31EEACC91A0B826600C670DD /* Images.xcassets in Resources */,
 				31A592D61A18327500E574A6 /* Credits.rtf in Resources */,
-				317783A11A16A84B0056E8A7 /* MTSyncTheme.ai in Resources */,
-				31A592E01A18397400E574A6 /* MTSyncTheme.png in Resources */,
 				31A592DC1A18369300E574A6 /* Localizable.strings in Resources */,
 				31307D311A0F27ED00781D8E /* InfoPlist.strings in Resources */,
 				31EEACCC1A0B826600C670DD /* MainMenu.xib in Resources */,
