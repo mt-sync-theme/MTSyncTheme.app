@@ -127,32 +127,50 @@ class SubCommand: NSObject {
             task.waitUntilExit()
             
             var error:NSError?
-            switch task.terminationStatus {
-            case 101:
-                error = NSError(domain: "MTSyncTheme.app.mt-sync-theme.github.com", code: 1, userInfo: [
-                    NSLocalizedDescriptionKey: NSLocalizedString("Cannot connect to the endpoint", comment: ""),
-                    NSLocalizedRecoverySuggestionErrorKey: NSLocalizedString("Please check the endpoint and the status of the MT", comment: ""),
-                    ])
-            case 102:
-                error = NSError(domain: "MTSyncTheme.app.mt-sync-theme.github.com", code: 1, userInfo: [
-                    NSLocalizedDescriptionKey: NSLocalizedString("mt-data-api.cgi returned an unexpected data", comment: ""),
-                    NSLocalizedRecoverySuggestionErrorKey: NSLocalizedString("Please check the endpoint and the status of the MT", comment: ""),
-                    ])
-            case 151:
-                error = NSError(domain: "MTSyncTheme.app.mt-sync-theme.github.com", code: 1, userInfo: [
-                    NSLocalizedDescriptionKey: NSLocalizedString("mt-data-api.cgi returned an authentication error", comment: ""),
-                    NSLocalizedRecoverySuggestionErrorKey: NSLocalizedString("Please confirm the username and the password", comment: ""),
-                    ])
-                self.password = ""
-            default:
-                break
+            if task.terminationStatus != 0 {
+                
+                switch task.terminationStatus {
+                case 101:
+                    error = NSError(domain: "MTSyncTheme.app.mt-sync-theme.github.com", code: 1, userInfo: [
+                        NSLocalizedDescriptionKey: NSLocalizedString("Cannot connect to the endpoint", comment: ""),
+                        NSLocalizedRecoverySuggestionErrorKey: NSLocalizedString("Please check the endpoint and the status of the MT", comment: ""),
+                        ])
+                case 102:
+                    error = NSError(domain: "MTSyncTheme.app.mt-sync-theme.github.com", code: 1, userInfo: [
+                        NSLocalizedDescriptionKey: NSLocalizedString("mt-data-api.cgi returned an unexpected data", comment: ""),
+                        NSLocalizedRecoverySuggestionErrorKey: NSLocalizedString("Please check the endpoint and the status of the MT", comment: ""),
+                        ])
+                case 151:
+                    error = NSError(domain: "MTSyncTheme.app.mt-sync-theme.github.com", code: 1, userInfo: [
+                        NSLocalizedDescriptionKey: NSLocalizedString("mt-data-api.cgi returned an authentication error", comment: ""),
+                        NSLocalizedRecoverySuggestionErrorKey: NSLocalizedString("Please confirm the username and the password", comment: ""),
+                        ])
+                    self.password = ""
+                case 173:
+                    error = NSError(domain: "MTSyncTheme.app.mt-sync-theme.github.com", code: 1, userInfo: [
+                        NSLocalizedDescriptionKey: NSLocalizedString("mt-data-api.cgi returned an 403 error", comment: ""),
+                        NSLocalizedRecoverySuggestionErrorKey: NSLocalizedString("Please confirm your permission. The SyncedTheme plugin requires system level edit_templates permission", comment: ""),
+                        ])
+                case 174:
+                    error = NSError(domain: "MTSyncTheme.app.mt-sync-theme.github.com", code: 1, userInfo: [
+                        NSLocalizedDescriptionKey: NSLocalizedString("mt-data-api.cgi returned an 404 error", comment: ""),
+                        NSLocalizedRecoverySuggestionErrorKey: NSLocalizedString("Please confirm that The SyncedTheme plugin is installed", comment: ""),
+                        ])
+                default:
+                    error = NSError(domain: "MTSyncTheme.app.mt-sync-theme.github.com", code: 1, userInfo: [
+                        NSLocalizedDescriptionKey: NSLocalizedString("mt-sync-theme returned an error:", comment: "") + String(task.terminationStatus),
+                        NSLocalizedRecoverySuggestionErrorKey: NSLocalizedString("Please check the status of the MT", comment: ""),
+                        ])
+                }
             }
             
             (param["postRun"] as ()->())()
             
             if (error != nil) {
-                let alert = NSAlert(error: error!)
-                alert.runModal()
+                dispatch_async(dispatch_get_main_queue(), {
+                    let alert = NSAlert(error: error!)
+                    alert.runModal()
+                })
             }
             
             if (!isWatchCommand) {
