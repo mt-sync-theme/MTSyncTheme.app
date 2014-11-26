@@ -11,11 +11,12 @@
 		311B93621A0C74AB008F6AF9 /* ConfigWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B93611A0C74AB008F6AF9 /* ConfigWindow.swift */; };
 		31307D311A0F27ED00781D8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31307D331A0F27ED00781D8E /* InfoPlist.strings */; };
 		31307D361A0F27ED00781D8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31307D381A0F27ED00781D8E /* InfoPlist.strings */; };
+		31662FD41A259FD100544BE1 /* YAML.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31662FBA1A259E2500544BE1 /* YAML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		31662FD51A259FE300544BE1 /* YAML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31662FBA1A259E2500544BE1 /* YAML.framework */; };
 		317783A41A16D6FB0056E8A7 /* StringIsEmptyTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317783A31A16D6FB0056E8A7 /* StringIsEmptyTransformer.swift */; };
 		317783A61A16DBB80056E8A7 /* StringIsNotEmptyTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317783A51A16DBB80056E8A7 /* StringIsNotEmptyTransformer.swift */; };
 		31A592D61A18327500E574A6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 31A592D81A18327500E574A6 /* Credits.rtf */; };
 		31A592DC1A18369300E574A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31A592DE1A18369300E574A6 /* Localizable.strings */; };
-		31E5BF451A0F35C0000D3112 /* YAML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E5BF441A0F35C0000D3112 /* YAML.framework */; };
 		31EEACC71A0B826600C670DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EEACC61A0B826600C670DD /* AppDelegate.swift */; };
 		31EEACC91A0B826600C670DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31EEACC81A0B826600C670DD /* Images.xcassets */; };
 		31EEACCC1A0B826600C670DD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31EEACCA1A0B826600C670DD /* MainMenu.xib */; };
@@ -25,6 +26,48 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		31662FB91A259E2500544BE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31662FB11A259E2500544BE1 /* YAML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = YAML;
+		};
+		31662FBB1A259E2500544BE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31662FB11A259E2500544BE1 /* YAML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D319EEA613E5EE2A000EB46D;
+			remoteInfo = YAMLUnitTests;
+		};
+		31662FBD1A259E2500544BE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31662FB11A259E2500544BE1 /* YAML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB6C420E124D99BE00886AD1;
+			remoteInfo = test;
+		};
+		31662FBF1A259E2500544BE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31662FB11A259E2500544BE1 /* YAML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBE745C1124F8C0D00618049;
+			remoteInfo = "test (spec12examples)";
+		};
+		31662FC11A259E2500544BE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31662FB11A259E2500544BE1 /* YAML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB2B5928124E2100001FFEEB;
+			remoteInfo = events;
+		};
+		31662FD11A259FAD00544BE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31662FB11A259E2500544BE1 /* YAML.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = YAML;
+		};
 		31EEACD21A0B826600C670DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 31EEACB91A0B826600C670DD /* Project object */;
@@ -34,6 +77,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		31662FD31A259FAD00544BE1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				31662FD41A259FD100544BE1 /* YAML.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		31038C311A153E4200586F8B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = ../Config.swift; sourceTree = "<group>"; };
 		311B93611A0C74AB008F6AF9 /* ConfigWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigWindow.swift; path = ../ConfigWindow.swift; sourceTree = "<group>"; };
@@ -42,6 +99,7 @@
 		31307D321A0F27ED00781D8E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		31307D371A0F27ED00781D8E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		31307D391A0F27EE00781D8E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		31662FB11A259E2500544BE1 /* YAML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YAML.xcodeproj; path = ../github.com/mirek/YAML.framework/YAML.xcodeproj; sourceTree = "<group>"; };
 		317783A01A16A84B0056E8A7 /* MTSyncTheme.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MTSyncTheme.ai; sourceTree = "<group>"; };
 		317783A31A16D6FB0056E8A7 /* StringIsEmptyTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringIsEmptyTransformer.swift; path = ../StringIsEmptyTransformer.swift; sourceTree = "<group>"; };
 		317783A51A16DBB80056E8A7 /* StringIsNotEmptyTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringIsNotEmptyTransformer.swift; path = ../StringIsNotEmptyTransformer.swift; sourceTree = "<group>"; };
@@ -49,7 +107,6 @@
 		31A592D91A18327800E574A6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = ja; path = ja.lproj/Credits.rtf; sourceTree = "<group>"; };
 		31A592DD1A18369300E574A6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		31A592DF1A18397400E574A6 /* MTSyncTheme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MTSyncTheme.png; sourceTree = "<group>"; };
-		31E5BF441A0F35C0000D3112 /* YAML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YAML.framework; sourceTree = "<group>"; };
 		31EEACC11A0B826600C670DD /* MTSyncTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTSyncTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31EEACC51A0B826600C670DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31EEACC61A0B826600C670DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31E5BF451A0F35C0000D3112 /* YAML.framework in Frameworks */,
+				31662FD51A259FE300544BE1 /* YAML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +155,18 @@
 			name = binary;
 			sourceTree = "<group>";
 		};
+		31662FB21A259E2500544BE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31662FBA1A259E2500544BE1 /* YAML.framework */,
+				31662FBC1A259E2500544BE1 /* YAMLUnitTests.octest */,
+				31662FBE1A259E2500544BE1 /* test */,
+				31662FC01A259E2500544BE1 /* test */,
+				31662FC21A259E2500544BE1 /* events */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		317783A21A16A8590056E8A7 /* resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +179,7 @@
 		31EEACB81A0B826600C670DD = {
 			isa = PBXGroup;
 			children = (
-				31E5BF441A0F35C0000D3112 /* YAML.framework */,
+				31662FB11A259E2500544BE1 /* YAML.xcodeproj */,
 				31EEACC31A0B826600C670DD /* MTSyncTheme */,
 				31EEACD41A0B826600C670DD /* MTSyncThemeTests */,
 				31EEACC21A0B826600C670DD /* Products */,
@@ -184,10 +253,12 @@
 				31EEACBD1A0B826600C670DD /* Sources */,
 				31EEACBE1A0B826600C670DD /* Frameworks */,
 				31EEACBF1A0B826600C670DD /* Resources */,
+				31662FD31A259FAD00544BE1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				31662FD21A259FAD00544BE1 /* PBXTargetDependency */,
 			);
 			name = MTSyncTheme;
 			productName = MTSyncTheme;
@@ -243,6 +314,12 @@
 			mainGroup = 31EEACB81A0B826600C670DD;
 			productRefGroup = 31EEACC21A0B826600C670DD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 31662FB21A259E2500544BE1 /* Products */;
+					ProjectRef = 31662FB11A259E2500544BE1 /* YAML.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				31EEACC01A0B826600C670DD /* MTSyncTheme */,
@@ -250,6 +327,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		31662FBA1A259E2500544BE1 /* YAML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = YAML.framework;
+			remoteRef = 31662FB91A259E2500544BE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31662FBC1A259E2500544BE1 /* YAMLUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = YAMLUnitTests.octest;
+			remoteRef = 31662FBB1A259E2500544BE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31662FBE1A259E2500544BE1 /* test */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test;
+			remoteRef = 31662FBD1A259E2500544BE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31662FC01A259E2500544BE1 /* test */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test;
+			remoteRef = 31662FBF1A259E2500544BE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31662FC21A259E2500544BE1 /* events */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = events;
+			remoteRef = 31662FC11A259E2500544BE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		31EEACBF1A0B826600C670DD /* Resources */ = {
@@ -300,6 +415,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		31662FD21A259FAD00544BE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YAML;
+			targetProxy = 31662FD11A259FAD00544BE1 /* PBXContainerItemProxy */;
+		};
 		31EEACD31A0B826600C670DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 31EEACC01A0B826600C670DD /* MTSyncTheme */;
