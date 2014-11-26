@@ -116,6 +116,7 @@ class SubCommand: NSObject {
             var env = NSProcessInfo().environment
             env["MT_SYNC_THEME_PASSWORD_FILE"] = tmpfile
             env["MT_SYNC_THEME_PASSWORD_FILE_REMOVE"] = tmpfile
+            env["DYLD_INSERT_LIBRARIES"] = ""
             task.environment = env
             
             if (!isWatchCommand) {
