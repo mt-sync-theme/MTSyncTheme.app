@@ -1,5 +1,7 @@
 # MTSyncTheme.app
 
+[![Join the chat at https://gitter.im/mt-sync-theme/MTSyncTheme.app](https://badges.gitter.im/mt-sync-theme/MTSyncTheme.app.svg)](https://gitter.im/mt-sync-theme/MTSyncTheme.app?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This is a GUI frontend of the [mt-sync-theme](https://github.com/mt-sync-theme/mt-sync-theme). This program can synchronize files, and generate preview, and apply theme.
 
 ![Screenshot](https://raw.githubusercontent.com/mt-sync-theme/MTSyncTheme.app/master/artwork/screenshot.png)
